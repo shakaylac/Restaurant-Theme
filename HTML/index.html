@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lemon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/homepage.css">
     <title>Honey Sweets</title>
 </head>
 <body>
     <header>
-        <logo src="logo"></logo>
+        <a href=""><img src="../IMAGES/logo.svg" class="logo"></a>
 
-        <search>
-                <input type="text" placeholder="Search">
-                <button type="submit"><img src="search-icon.png" alt="Search" class="search" id="search"></button>
-        </search>
+        <form action="search_menu.html" method="get" role="search" class="search-bar">
+            <input type="search" id="search" name="">
+            <button type="submit" class="search-button"><img src="../IMAGES/search_new.svg"></button>
+        </form>
 
-        <nav>
+        <nav> 
                 <a href="#">Gallery</a>
                 <a href="#">Contact</a>
         </nav>
 
-        <a href="#cart"><img src="cart-icon.png" alt="Cart" class="cart" id="cart"></a>
+        <a href="#cart"><img src="shopping_cart.svg" alt="Cart" class="cart" id="cart"></a>
 
-        <profile>
-            <img src="profile-icon.png" alt="Profile" class="profile" id="profile">
-        </profile>
+        <div class="profile">
+            <img src="../IMAGES/default_profile_icon.png" alt="Profile" class="profile" id="profile">
+        </div>
+        
     </header>
 
     <main>
