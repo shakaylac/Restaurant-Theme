@@ -11,6 +11,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 header {
@@ -72,10 +73,42 @@ a {
     cursor: pointer;
 }
 
+.hero {
+    position: relative;
+}
+
 .hero-image {
     width: 100%;
     height: auto;
     filter: brightness(50%);
 }
 
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 30%;
+    border-radius: 5px;
+    background-color: #000000b9;
+    padding: 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: var(--primary-font);
+
+}
+
+.order-online-btn {
+    width: 150px;
+    height: 30px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+}
 
