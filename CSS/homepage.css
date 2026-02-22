@@ -14,6 +14,8 @@
     position: relative;
 }
 
+/* HEADER */
+
 header {
     background-color: #d8a900ea ;
     width: 100%;
@@ -73,6 +75,8 @@ a {
     cursor: pointer;
 }
 
+/* HERO SECTION */
+
 .hero {
     position: relative;
 }
@@ -111,4 +115,8 @@ a {
     border-radius: 5px;
     margin: 20px;
 }
+
+/* MENU SECTION */
+
+
 
