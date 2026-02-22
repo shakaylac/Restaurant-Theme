@@ -118,5 +118,29 @@ a {
 
 /* MENU SECTION */
 
+.menu-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-intro > h1 {
+    color: var(--text-color);
+    font-family: var(--secondary-font);
+    font-size: 5rem;
+}
+
+hr {
+    background-color: var(--text-color);
+    height: 5px;
+    width: 50%;
+}
+
+.menu-intro > p{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    width: 70%;
+    text-align: center;
+}
 
 
