@@ -141,6 +141,51 @@ hr {
     font-size: 1.5rem;
     width: 70%;
     text-align: center;
+    padding: 20px;
+}
+
+/* MENU ITEMS */
+
+.menu-items-section {
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr);
+    align-self: center;
+}
+
+.categories {
+    width: 90%;
+}
+
+.categories > h1 {
+    color: var(--text-color);
+    font-family: var(--secondary-font);
+    font-size: 2.5rem;
+    margin-top: 100px;
+}
+
+.category-header-divider {
+    background-color: var(--text-color);
+    height: 4px;
+    width: 100%;
+}
+
+.menu-item > h2 {
+    font-family: var(--secondary-font);
+    color: var(--text-color);
+}
+
+.menu-item > p {
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.menu-image {
+    width: 80%;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 5px;
 }
 
 
