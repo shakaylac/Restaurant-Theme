@@ -14,6 +14,18 @@
     position: relative;
 }
 
+/* MAIN */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding:  80px 120px;
+    padding-top: 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
 /* HEADER */
 
 header {
@@ -77,6 +89,95 @@ a {
 .profile:hover {
     cursor: pointer;
 }
+
+/* STORE-INFO-SECTION */
+
+.store-info {
+
+}
+
+.store-info > img {
+    width: 100%;
+    margin-top: -40px;
+}
+
+.store-info {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    text-align: left;
+    line-height: 2.2rem;
+}
+
+.store-info > h2 {
+    font-family: var(--secondary-font);
+    padding: 10px;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.store-info > p {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.divider {
+    background-color: var(--text-color);
+    align-self: center;
+    margin-bottom: 10px;
+    height: 3px;
+    width: 90%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 80px;
+    margin-top: 20px;
+}
+
+.contact-form > h2 {
+    font-family: var(--secondary-font);
+    color: var(--text-color);
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.contact-form > p {
+    font-family: var(--primary-font);
+    color: var(--primary-font);
+}
+
+label {
+    font-family:var(--primary-font);
+    color: var(--text-color);
+    font-size: 1.3rem;
+
+}
+
+input {
+    border-radius: 5px;
+    border: 1.5px solid #ccc;
+    width: 90%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.textarea {
+    height: 100px;
+}
+
+.submit-btn {
+    align-self: right;
+}
+
 
 
 /* FOOTER */
