@@ -103,7 +103,7 @@ main {
 .image-container {
     align-self: center;
     width: 100%;
-    height: 200px;
+    height: 300px;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -120,6 +120,13 @@ main {
     color: var(--text-color);
     text-align: left;
     margin-top: 10px;
+}
+
+.price {
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .description {
