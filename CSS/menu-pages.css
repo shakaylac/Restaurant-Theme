@@ -84,8 +84,20 @@ a {
 main {
     display: flex;
     flex-direction: column;
-    padding: 150px 50px;
+    padding: 100px 50px;
     padding-bottom: 50px;
+}
+
+.home-btn {
+    background-color: #fff;
+    border: none;
+    color: var(--text-color);
+    margin-bottom: 50px;
+}
+
+.home-btn:hover {
+    color: var(--secondary-color);
+    background-color: #fff;
 }
 
 .image-container {
