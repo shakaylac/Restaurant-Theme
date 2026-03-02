@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lemon&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/menu-pages-options.css">
+    <link rel="stylesheet" href="/CSS/menu-pages.css">
     <title>Espressos </title>
 </head>
 <body>
@@ -45,13 +45,41 @@
 
         <p class="description">Bold, rich shots of coffee pulled fresh to give you that perfect pick-me-up.</p>
 
+        <form class="milk-options">
+            <h3>Milk Alternative</h3>
+            <h4>Please Choose One:</h4>
+            <input type="radio" id="opt1" name="group-1" value="2%-milk">
+            <label for="opt1" class="menu-option">2% Milk</label><br>
+            <input type="radio" id="opt2" name="group-1" value="almond-milk">
+            <label for="opt2" class="menu-option">Almond Milk</label><br>
+            <input type="radio" id="opt3" name="group-1" value="oat-meal">
+            <label for="opt3" class="menu-option">Oat Milk</label>
+        </form>
+
+        <form class="flavor-options">
+            <h3>Flavors</h3>
+            <h4>Please Choose One:</h4>
+            <input type="radio" id="opt4" name="group-2" value="vanilla">
+            <label for="opt4" class="menu-option">Vanilla</label><br>
+            <input type="radio" id="opt5" name="group-2" value="caramel">
+            <label for="opt5" class="menu-option">Caramel</label><br>
+            <input type="radio" id="opt6" name="group-2" value="hazelnut">
+            <label for="opt6" class="menu-option">Hazelnut</label>
+            <input type="radio" id="opt7" name="group-2" value="brown-sugar">
+            <label for="opt7" class="menu-option">Brown Sugar</label>
+            <input type="radio" id="opt8" name="group-2" value="toffee-nut">
+            <label for="opt8" class="menu-option">Toffee Nut</label>
+        </form>
+
+        <h2>Customizations</h2>
+
         <button class="add-to-cart-btn" id="add-to-cart-btn">ADD TO CART</button>
 
         <button id="add-btn"></button>
         <div id="counter"></div>
         <button id="minus-btn"></button>
 
-        <p class="includes">contains: dairy, cocoa, rice, </p>
+        <p class="includes">contains: caffeine, dairy </p>
 
     </main>
 

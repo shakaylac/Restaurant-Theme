@@ -147,7 +147,7 @@ main {
     border: none;
     border-radius: 5px;
     padding: 2px;
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
 .add-to-cart-btn:hover {
@@ -245,7 +245,7 @@ h4 {
     margin-bottom: 10px;
 }
 
-.milk-options, .flavor-options {
+.milk-options, .flavor-options, .size-options, .ice-option {
     display: flex;
     flex-direction: column;
     padding: 20px;
