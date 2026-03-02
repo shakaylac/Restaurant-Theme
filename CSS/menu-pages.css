@@ -15,7 +15,7 @@
     position: relative;
 }
 
-/* HEADER */
+/*--------HEADER--------*/
 
 header {
     background-color: #d8a900ea ;
@@ -79,7 +79,7 @@ a {
     cursor: pointer;
 }
 
-/* MAIN */
+/*--------MAIN--------*/
 
 main {
     display: flex;
@@ -170,7 +170,7 @@ main {
 
 
 
-/* FOOTER */
+/*--------FOOTER--------*/
 
 footer {
     display: flex;
@@ -220,4 +220,93 @@ footer > p {
 
 .logo-icon {
     width: 5%;
+}
+
+/*--------ALTERNATIVE AND VARIATION STYLING-------- */
+
+
+h2 {
+    font-family: var(--secondary-font);
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: var(--secondary-font);
+    color: var(--text-color);
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.milk-options, .flavor-options {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.menu-option {
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    margin: 5px;
+}
+
+/* custom radio button style */
+
+input[type="radio"] {
+    appearance: none;
+}
+
+.menu-option::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #d8a900;
+    border-radius: 3px;
+    margin-right: 15px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.menu-option:hover::before {
+    box-shadow: 0px 0px 5px 2px #d8a900ea;
+    border-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + .menu-option::before {
+    background-color: var(--primary-color);
+}
+
+/* checkmark */
+.menu-option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu-option input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkmark:after {
+    content:"";
+    position: absolute;
+    display: none;
+    /* for checkmark */
+    left: -98px;
+    top: 3px;
+    width: 3px;
+    height: 8px;
+    border: solid #000;
+    background-color: var(--primary-color);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
 }
