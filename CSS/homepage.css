@@ -174,7 +174,8 @@ hr {
     width: 100%;
 }
 
-.menu-itme-section > a {
+
+.menu-item-section > a {
     margin: 5px;
     border-radius: 5px;
 
@@ -190,7 +191,6 @@ hr {
 .menu-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: 15px;
 }
@@ -198,6 +198,9 @@ hr {
 .menu-item > h2 {
     font-family: var(--secondary-font);
     color: var(--text-color);
+    width: 70%;
+    align-self: start;
+    margin-left: 10%;
 }
 
 .menu-item > p {
