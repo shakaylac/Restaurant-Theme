@@ -310,3 +310,22 @@ input[type="radio"]:checked + .menu-option::before {
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
 }
+
+/* sizes */
+
+.sizes, .dairy {
+    display: flex;
+    align-items: center;
+}
+
+.prices {
+    margin-top: 80px;
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.prices > p {
+    margin: 15px;
+}
+
