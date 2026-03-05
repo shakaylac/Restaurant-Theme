@@ -20,8 +20,8 @@
         </form>
 
         <nav> 
-                <a href="#">Gallery</a>
-                <a href="#">Contact</a>
+                <a href="../gallery.html">Gallery</a>
+                <a href="../contact.html">Contact</a>
         </nav>
 
         <a href="#cart"><img src="/IMAGES/shopping-cart.svg" alt="Cart" class="cart" id="cart"></a>
@@ -41,20 +41,47 @@
         </div>
         
         <h1 class="menu-item-title">Lattes</h1>
-        <div class="price">$2.50</div>
+        <div class="price">$3.25</div>
 
         <p class="description">Smooth espresso paired with steamed milk and a touch of sweetness, served hot or iced.</p>
 
-        <form class="milk-options">
-            <h3>Milk Alternative</h3>
-            <h4>Please Choose One:</h4>
-            <input type="radio" id="opt1" name="group-1" value="2%-milk">
-            <label for="opt1" class="menu-option">2% Milk</label><br>
-            <input type="radio" id="opt2" name="group-1" value="almond-milk">
-            <label for="opt2" class="menu-option">Almond Milk</label><br>
-            <input type="radio" id="opt3" name="group-1" value="oat-meal">
-            <label for="opt3" class="menu-option">Oat Milk</label>
-        </form>
+        <div class="sizes">
+            <form class="size-options">
+                <h3>Sizes</h3>
+                <h4>Please Choose One:</h4>
+                <input type="radio" id="opt1" name="group-2" value="small">
+                <label for="opt1" class="menu-option">Small 12oz</label>
+                <input type="radio" id="opt2" name="group-2" value="medium">
+                <label for="opt2" class="menu-option">Medium 20oz</label>
+                <input type="radio" id="opt3" name="group-2" value="large">
+                <label for="opt3" class="menu-option">Large 30oz</label> 
+            </form>
+
+            <div class="prices">
+                <p>$3.25</p>
+                <p>$5.60</p>
+                <p>$7.20</p>
+            </div>
+        </div>
+
+        <div class="dairy">
+            <form class="milk-options">
+                <h3>Milk Alternative</h3>
+                <h4>Please Choose One:</h4>
+                <input type="radio" id="opt1" name="group-1" value="2%-milk">
+                <label for="opt1" class="menu-option">2% Milk</label><br>
+                <input type="radio" id="opt2" name="group-1" value="almond-milk">
+                <label for="opt2" class="menu-option">Almond Milk</label><br>
+                <input type="radio" id="opt3" name="group-1" value="oat-meal">
+                <label for="opt3" class="menu-option">Oat Milk</label>
+            </form>
+
+            <div class="prices">
+                <p>$0.00</p>
+                <p>$0.20</p>
+                <p>$0.20</p>
+            </div>
+        </div>
 
         <form class="flavor-options">
             <h3>Flavors</h3>
