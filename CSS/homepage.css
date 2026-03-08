@@ -142,6 +142,7 @@ hr {
 
 .menu-intro > p{
     color: var(--text-color);
+    font-family: var(--primary-font);
     font-size: 1.5rem;
     width: 70%;
     text-align: center;
@@ -232,6 +233,7 @@ hr {
     justify-content: center;
     gap: 20px;
     width: 90%;
+    padding: 80px;
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -244,6 +246,7 @@ hr {
 
 .divider {
     height: 2px;
+    width: 100%;
 }
 
 .review-item {
@@ -272,19 +275,21 @@ hr {
     margin-top: 10px;
 }
 
-.review > button {
-    width: 150px;
+.leave-review-button {
+    width: 200px;
     height: 40px;
     border: none;
     background-color: var(--primary-color);
     color: #fff;
+    font-weight: 700;
     margin-top: 50px;
     border-radius: 5px;
     font-size: 1.2rem;
-    align-self: end;
+    right: 0;
+    position: absolute;
 }
 
-.review > button:hover {
+.leave-review-button:hover {
     cursor: pointer;
     border: 1px solid #d8a900;
     color: #d8a900;
@@ -349,10 +354,64 @@ footer > p {
 .review-form {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 400px;
+    width: 30vw;
+    height: 80%;
     background-color: #fff;
-    border: 2px solid #d8a900;
+    border: 1px solid #d8a900;
+    border-radius: 10px;
     align-self: center;
-    padding: 30px;
+    padding: 20px;
+}
+
+.review-form > h2 {
+    font-family: var(--primary-font);
+    text-align: center;
+}
+
+.review-form > .label {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: var(--primary-font);
+    color: var(--text-color);
+}
+
+.review-form > input {
+    width: 150px;
+}
+
+.textarea {
+    padding: 50px;
+}
+
+.submit-review-btn {
+    align-self: end;
+    width: 100px;
+    height: 30px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+    font-family: var(--primary-font);
+    color: #fff;
+}
+
+.review-form > h2{
+    font-family: var(--primary-font);
+    color: var(--text-color);
+}
+
+.close-btn {
+    width: 10%;
+    height: 10%;
+    padding-bottom: 20px;
+    border: none;
+    background-color: #fff;
+    font-size: 1.2rem;
+    align-self: end;
+    color: var(--text-color);
+    font-family: var(--primary-font);
+}
+
+.close-btn:hover {
+    cursor: pointer;
 }

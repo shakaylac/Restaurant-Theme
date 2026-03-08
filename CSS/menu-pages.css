@@ -93,6 +93,7 @@ main {
     border: none;
     color: var(--text-color);
     margin-bottom: 50px;
+    font-size: 1.2rem;
 }
 
 .home-btn:hover {

@@ -5,20 +5,21 @@ const createReviewBtn = document.getElementById("submit-button");
 
 function openFormCreation() {
     const reviewForm = document.createElement("form");
-    reviewForm.setAttribute('method', "post");
-    reviewForm.setAttribute('action', "/submit-page");
+    /*reviewForm.setAttribute('method', "post");
+    reviewForm.setAttribute('action', "/submit-page");*/
     reviewForm.className ='review-form';
     reviewForm.id = 'reviewForm';
 
          reviewForm.innerHTML = `
+         <button class="close-btn" id="close_btn" onclick="closeForm()"> X </button>
         <h2>Let Us Know How We Did!</h2>
-        <label for="name">Name:</label><br>
+        <label for="name" class="label">Name:</label><br>
         <input type="text" id="name" name="name"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="message">Review</label><br>
-        <input type="textarea" id="textarea" name="textarea"><br>
-        <input type="submit" value="Submit">
+        <label for="email" class="label">Email:</label><br>
+        <input type="email" id="email" name="email" class=""><br>
+        <label for="message" class="label">Review</label><br>
+        <input type="textarea" id="textarea" name="textarea" class="textarea"><br>
+        <button type="submit" value="Submit" class="submit-review-btn"> SUBMIT </button>
     `;
         
 
@@ -30,6 +31,7 @@ function openFormCreation() {
 
     document.body.appendChild(reviewForm);
 }
+
 
 function openForm() {
     openFormCreation();
@@ -45,7 +47,13 @@ function validateForm() {
     
 }
 
-createReviewBtn.addEventListener('click', openFormCreation);
+const cancelBtn = document.getElementById("cancel_btn");
 
+function closeForm() {
+    reviewForm.style.dispaly = 'none';
+}
+
+createReviewBtn.addEventListener('click', openFormCreation);
+cancelBtn.addEventListener('click', closeForm);
 
 
