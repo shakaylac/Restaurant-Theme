@@ -1,17 +1,17 @@
 const imageContainer = document.getElementById('image_container');
-const imageDescription = document.getElementById('image_description');
+const galleryDisplayContainer = document.getElementById('gallery_display_container')
 
+function openGalleryDisplay() {
+    const galleryDisplay = document.createElement('div');
+    galleryDisplay.className = "gallery-display";
+    galleryDisplay.setAttribute = ("id", "gallery_display");
 
-function showImageDescription() {
-    imageDescription.style.display = "block";
-    console.log("mouse hovers over image");
+    const exitButton = document.createElement('button');
+    exitButton.textContent = "X";
+
+    galleryDisplay.appendChild(exitButton);
+    galleryDisplayContainer.appendChild(galleryDisplay);
+    console.log("gallery display in visible");
 }
 
-function hideImageDescription() {
-    imageDescription.style.display = "none";
-    console.log("mouse leaves the image");
-}
-   
-
-imageContainer.addEventListener("mouseenter", showImageDescription);
-imageContainer.addEventListener("mouseleave", hideImageDescription);
+imageContainer.addEventListener('onclick', openGalleryDisplay);
