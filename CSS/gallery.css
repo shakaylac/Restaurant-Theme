@@ -161,6 +161,11 @@ h1 {
 .image-container:hover {
     border: 1px solid #d8a900;
     cursor: pointer;
+    
+}
+
+.image-container:hover .image-description {
+    display: block;
 }
 
 .gallery-image {
