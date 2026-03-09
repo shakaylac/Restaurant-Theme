@@ -183,11 +183,24 @@ h1 {
     z-index: 1;
     right: 0;
     display: none;
+    animation: slideInRight 0.9s ease-out forwards;
 }
 
 .image-description > h3,p {
     color:#fff;
 }
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100vw); /* Start off-screen to the right */
+    opacity: 0; /* Optional: Start invisible */
+  }
+  to {
+    transform: translateX(0); /* End at its natural position */
+    opacity: 1; /* Fade in */
+  }
+}
+
 
 
 
