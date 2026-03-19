@@ -16,6 +16,7 @@
 
 /* MAIN */
 
+
 main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -76,7 +77,7 @@ a {
 }
 
 .cart {
-    max-width: 30%;
+    width: 30%;
 }
 
 .profile {
@@ -89,6 +90,18 @@ a {
 .profile:hover {
     cursor: pointer;
 }
+
+.profile {
+    background: none;
+    border: none;
+    width: 3rem;
+    margin: 5px;
+}
+
+.profile:hover {
+    cursor: pointer;
+}
+
 
 /* STORE-INFO-SECTION */
 
@@ -236,4 +249,119 @@ footer > p {
 
 .logo-icon {
     width: 5%;
+}
+
+/* =====================
+   RESPONSIVE STYLES
+   ===================== */
+
+/* --- Tablet (≤ 768px) --- */
+@media (max-width: 768px) {
+
+    header {
+        grid-template-columns: 1fr auto auto auto;
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .search-bar {
+        grid-column: 1 / -1;
+        margin: 5px 0;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .cart {
+        width: 100%;
+    }
+
+    /* Uncomment and override main if it ever gets used */
+    main {
+        grid-template-columns: 1fr;
+        padding: 100px 30px 40px;
+        gap: 40px;
+    }
+
+    .store-info {
+        padding-top: 200px;
+    }
+
+    .store-info > p {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    footer .footer-info {
+        flex-direction: column;
+    }
+
+    .address-icon,
+    .phone-icon {
+        width: 8%;
+    }
+}
+
+/* --- Mobile (≤ 480px) --- */
+@media (max-width: 480px) {
+
+    header {
+        grid-template-columns: 1fr auto auto;
+    }
+
+    main {
+        padding: 90px 15px 30px;
+        gap: 24px;
+    }
+
+    .store-info {
+
+    }
+
+    .store-info > h2 {
+        font-size: 1.6rem;
+    }
+
+    .store-info > p {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 15px 15px 30px;
+    }
+
+    .contact-form > h2 {
+        font-size: 1.5rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .submit-btn {
+        width: 50%;
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 1.1rem;
+    }
+
+    .address,
+    .phone > p {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    .address-icon,
+    .phone-icon {
+        width: 12%;
+    }
 }

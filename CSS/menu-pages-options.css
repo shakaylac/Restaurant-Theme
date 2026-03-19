@@ -1,3 +1,4 @@
+/*
 :root {
     --primary-color: #d8a900ea;
     --secondary-color: #A46E00;
@@ -17,6 +18,7 @@
 
 /* HEADER */
 
+/*
 header {
     background-color: #d8a900ea ;
     width: 100%;
@@ -80,7 +82,7 @@ a {
 }
 
 /* MAIN */
-
+/*
 main {
     display: flex;
     flex-direction: column;
@@ -188,7 +190,7 @@ main {
 
 
 /* FOOTER */
-
+/*
 footer {
     display: flex;
     flex-direction: column;

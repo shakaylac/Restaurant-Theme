@@ -65,7 +65,7 @@ a {
 }
 
 .cart {
-    max-width: 30%;
+    width: 30%;
 }
 
 .profile {
@@ -330,3 +330,145 @@ input[type="radio"]:checked + .menu-option::before {
     margin: 15px;
 }
 
+
+
+/* =====================
+   RESPONSIVE STYLES
+   ===================== */
+
+/* --- Tablet (≤ 768px) --- */
+@media (max-width: 768px) {
+
+    header {
+        grid-template-columns: 1fr auto auto auto;
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .search-bar {
+        grid-column: 1 / -1;
+        margin: 5px 0;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    main {
+        padding: 90px 30px 40px;
+        padding-top: 220px;
+    }
+
+    .cart {
+        width: 100%;
+    }
+
+    .image-container {
+        height: 220px;
+    }
+
+    .description {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .add-to-cart-btn {
+        margin-top: 40px;
+    }
+
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.5rem; }
+
+    .milk-options,
+    .flavor-options,
+    .size-options,
+    .ice-option {
+        padding: 12px;
+    }
+
+    .sizes,
+    .dairy {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .prices {
+        margin-top: 40px;
+    }
+
+    footer .footer-info {
+        flex-direction: column;
+    }
+}
+
+/* --- Mobile (≤ 480px) --- */
+@media (max-width: 480px) {
+
+    header {
+        grid-template-columns: 1fr auto auto;
+    }
+
+    main {
+        padding: 80px 15px 30px;
+        padding-top: 220px;
+    }
+
+    .home-btn {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+
+    .image-container {
+        height: 180px;
+    }
+
+    .menu-item-title {
+        font-size: 1.4rem;
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    h2 { font-size: 1.4rem; }
+    h3 { font-size: 1.3rem; }
+    h4 { font-size: 1rem; }
+
+    .milk-options,
+    .flavor-options,
+    .size-options,
+    .ice-option {
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    .add-to-cart-btn {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .prices {
+        margin-top: 25px;
+    }
+
+    .prices > p {
+        margin: 8px;
+        font-size: 1rem;
+    }
+
+    .address,
+    .phone > p {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    .address-icon,
+    .phone-icon {
+        width: 12%;
+    }
+}
